@@ -1,0 +1,94 @@
+
+img {
+    position: absolute;
+    filter: brightness(40%);
+    top: 0;
+    z-index: -1;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#clock {
+    color: white;
+    font-size: 150px;
+    font-weight: 800;
+}
+
+.login {
+    margin-bottom: 10px;
+}
+.login input:first-child{
+    height: 30px;
+    width: 200px;
+
+}
+
+.login input:last-child{
+    height: 32px;
+    width: 100px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid white
+
+}
+
+.todo input{
+    height: 30px;
+    width: 300px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    background-color: rgb(255, 255, 255, 0);
+}
+.todo input::placeholder {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.del-red {
+    margin-left: 10px;
+    color: tomato;
+}
+
+@keyframes activeDel {
+    0% {
+        color:tomato;
+        font-size: 20px;
+    }
+    50% {
+        color:red;
+        font-size: 25px;
+    }
+    100% {
+        color:tomato;
+        font-size: 20px;
+    }
+}
+.del-red:hover {
+    animation: activeDel 2s ease-in-out infinite;
+}
+
+#todo-list li {
+    list-style:none;
+}
+
+.hidden {
+    display: none;
+}
+
+.show{
+    display: inline;
+}
